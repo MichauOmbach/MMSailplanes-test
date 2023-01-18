@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='with-device-width, initial-scale=1.0'>
+    <title>M&M Sailplanes - O PROJEKCIE</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="ikony/favicon.ico"/>
+</head>
+<body>
+    
+   <section class='podmenu'>
+        <pas>
+            <a href="index.html"><img src="zdjecia/logo1.png"></a>
+            <div class="linki" id='linki'>
+        <i class="funkcja" onclick="ukryjMenu()" >X</i>
+                <ul>
+                    <li><a href="index.html">STRONA GŁÓWNA</a></li>
+                    <li><a href="about.html">O PROJEKCIE</a></li>
+                    <li><a href="aboutus.html">O NAS</a></li>
+                    <li><a href="aktualnosci.html">AKTUALNOŚCI</a></li>
+                    <li><a class="currentLink" href="kontakt.html">KONTAKT</a></li>
+                    <li><a class="english" href="homeEN.html">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+            </div>
+            <i class="funkcja" onclick="pokazMenu()">I||</i>
+        </pas>
+        
+       
+    
+    </section>
+    <section class="kontakt">
+        
+        <div class="rzad">
+            <div class="kontakt-kolumna">
+                
+                <h1>DANE TELEADRESOWE</h1><br>
+                
+                <div>
+                    <img src="ikony/ikonamapy.png">
+                    <span>
+                        <h3>Jasionka&nbsp;954E,&nbsp;36-002, Poland</h3>
+                        <p>adres korespondencyjny</p>
+                    </span>
+                </div>
+                
+                <div>
+                    <img src="ikony/ikonatel.png">
+                    <span>
+                        <h3>+48&nbsp;665&nbsp;741&nbsp;124</h3>
+                        <p>Pn.&nbsp;-&nbsp;Pt., godz.&nbsp;8<span class="godz">00</span>-15<span class="godz">00</span></p>
+                    </span>
+                </div>
+                
+                <div>
+                    <img src="ikony/ikonamail.png">
+                    <span>
+                        <h3>mmsailplanes@gmail.com</h3>
+                        <p>albo&nbsp;przez formularz kontaktowy &#10141;</p>
+                    </span>
+                </div>
+                
+            </div>
+            
+            <div class="kontakt-kolumna">
+                
+                <h1>FORMULARZ KONTAKTOWY</h1><br>
+                
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Wprowadź swoje imię" required>
+                    <input type="email" name="email" placeholder="Wprowadź swoj e-mail" required>
+                    <input type="text" name="subject" placeholder="Podaj temat rozmowy" required>
+                    <textarea rows="4" name="message" placeholder="Treść..." required></textarea>
+                    <button class="przycisk"type="submit" >Wyślij</button>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.3845615146583!2d22.01366670000001!3d50.116525499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ce47defc1911b%3A0xc16d4fda72a3edcb!2sJasionka%20954E%2C%2036-002%20Jasionka!5e0!3m2!1sen!2spl!4v1670336882907!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    
+   <section class="stopka">
+        
+        <div class="spod">
+                <p>Copyright &copy; 2022 <span>m&m Sailplanes</span>. <a href="zalaczniki/polityka_prywatnosci.pdf">Polityka&nbsp;Prywatności</a></p>
+        </div>
+        
+    </section>
+    
+    <div class="popup hidden">
+            <h1>Informacja o plikach cookies</h1>
+                <p>W ramach tej Strony stosujemy pliki cookies. Korzystanie ze Strony bez zmiany ustawień dotyczących cookies oznacza zgodę na ich zapis lub wykorzystanie. Możecie Państwo dokonać zmiany ustawień dotyczących cookies w przeglądarce internetowej w każdym czasie. Więcej szczegółów w "Polityce Prywatności".</p>
+                <button>Nie pokazuj mi więcej tego komunikatu</button>
+            </div>
+    
+    
+<!------ JavaScript do menu --------->
+    <script>
+        
+        var linki = document.getElementById("linki");
+        
+        function pokazMenu(){
+            linki.style.right = "0";
+        }
+        
+        function ukryjMenu(){
+            linki.style.right = "-200px";
+        }
+        
+    </script>
+    <script src="cookie.js"></script>
+    
+</body>
+</html>

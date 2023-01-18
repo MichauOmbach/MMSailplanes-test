@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='with-device-width, initial-scale=1.0'>
+    <title>M&M Sailplanes - O PROJEKCIE</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="ikony/favicon.ico"/>
+</head>
+<body>
+    
+    <section class='podmenu'>
+        <pas>
+            <a href="index.html"><img src="zdjecia/logo1.png"></a>
+            <div class="linki" id='linki'>
+        <i class="funkcja" onclick="ukryjMenu()" >X</i>
+                <ul>
+                    <li><a href="index.html">STRONA GŁÓWNA</a></li>
+                    <li><a href="about.html">O PROJEKCIE</a></li>
+                    <li><a href="aboutus.html">O NAS</a></li>
+                    <li><a class="currentLink" href="aktualnosci.html">AKTUALNOŚCI</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                    <li><a class="english" href="homeEN.html"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+            </div>
+            <i class="funkcja" onclick="pokazMenu()">I||</i>
+        </pas>
+    
+    </section>
+    
+    <div class='duzezdjecie' id="duzezdjeciebox">
+                    <img src="zdjecia/galeria/gal1.jpeg" id="duzezdjecie">
+    <span onclick="closeduzezdjecie()">X</span>
+    </div>
+    
+    <section class="aktualnosci">
+        
+         <div class="slajd">
+                    <div class="rzad">
+                        <div class="slajd-kolumna">
+                            <h3>Tytuł 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur nisl eget nunc ornare ultrices. Nulla tempor in nulla vitae congue. Vestibulum ac consectetur justo.</p>
+                            
+                            <br>
+                            <span>autor<br>12.12.22</span>
+                        </div>
+                        
+                        <div class="slajd-kolumna">
+                            <img alt="Tu powinno być zdjęcie" src="zdjecia/placeholder.png">
+                        </div>
+                    </div>   
+                </div>
+                
+                <div class="slajd">
+                    <div class="rzad">
+                        <div class="slajd-kolumna">
+                            <h3>Tytuł 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur nisl eget nunc ornare ultrices. Nulla tempor in nulla vitae congue. Vestibulum ac consectetur justo.</p>
+                            <br>
+                            <span>autor<br>12.12.22</span>
+                            
+                        </div>
+                        
+                        <div class="slajd-kolumna">
+                            <h3>Tytuł 3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur nisl eget nunc ornare ultrices. Nulla tempor in nulla vitae congue. Vestibulum ac consectetur justo.</p>
+                            <br>
+                            <span>autor<br>12.12.22</span>
+                        </div>
+                    </div>   
+                </div>
+                
+                <div class="slajd">
+                    <div class="rzad">
+                        <div class="slajd-kolumna">
+                            <h3>Tytuł 4</h3>
+                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum ipsum massa, vitae tristique tortor laoreet eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat elit id ex cursus, nec commodo urna placerat. Phasellus in eros in justo sodales convallis. Vestibulum quis accumsan diam, vel sagittis ex. Nullam dapibus tincidunt auctor. Donec scelerisque varius elementum. Nulla venenatis ligula ac mi faucibus porttitor nec vel purus. Mauris eu molestie tellus, vitae auctor lorem. Integer in semper justo.</p>
+                            <br>
+                            <ul>
+                                <li>Quisque posuere ante sed condimentum maximus.</li>
+                                <li>Donec scelerisque varius elementum. </li>
+                                <li>Integer in semper justo.</li>
+                            </ul>
+                            
+                            <br>
+                            <span>autor<br>12.12.22</span>
+                        </div>
+                        
+                        <div class="slajd-kolumna">
+                            <img alt="Tu powinno być zdjęcie" src="zdjecia/placeholder.png">
+                            <img alt="Tu powinno być zdjęcie" src="zdjecia/placeholder.png">
+                        </div>
+                    </div>   
+                </div>
+        
+    
+    
+    </section>
+    
+    <div class="popup hidden">
+            <h1>Informacja o plikach cookies</h1>
+                <p>W ramach tej Strony stosujemy pliki cookies. Korzystanie ze Strony bez zmiany ustawień dotyczących cookies oznacza zgodę na ich zapis lub wykorzystanie. Możecie Państwo dokonać zmiany ustawień dotyczących cookies w przeglądarce internetowej w każdym czasie. Więcej szczegółów w "Polityce Prywatności".</p>
+                <button>Nie pokazuj mi więcej tego komunikatu</button>
+            </div>
+
+ <section class="stopka">
+        
+        <div class="spod">
+                <p>Copyright &copy; 2022 <span>m&m Sailplanes</span>. <a href="zalaczniki/polityka_prywatnosci.pdf">Polityka&nbsp;Prywatności</a></p>
+        </div>
+        
+    </section>  
+    
+<!------ JavaScript do menu i galerii--------->
+    <script>
+        
+        var linki = document.getElementById("linki");
+        
+        function pokazMenu(){
+            linki.style.right = "0";
+        }
+        
+        function ukryjMenu(){
+            linki.style.right = "-200px";
+        }
+        
+                var duzezdjeciebox = document.getElementById("duzezdjeciebox");
+        var duzezdjecie = document.getElementById("duzezdjecie");
+        
+        function openduzezdjecie(pic){
+            duzezdjeciebox.style.display = "flex";
+            duzezdjecie.src = pic;
+        }
+        
+        function closeduzezdjecie(){
+            duzezdjeciebox.style.display = "none";
+        }
+    </script>
+    <script src="cookie.js"></script>
+    
+</body>
+</html>

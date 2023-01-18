@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='with-device-width, initial-scale=1.0'>
+    <title>M&M Sailplanes - STRONA GŁÓWNA</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="ikony/favicon.ico"/>
+</head>
+<body>
+    
+<div class="eu">
+                <h3>Projekt współfinansowany ze środków</h3>
+                <ul class="sponsor">
+                    <li><img src="ikony/eu1.png"></li>
+                    <li><img src="ikony/eu2.png"></li>
+                    <li><img src="ikony/eu3.png"></li>
+                    <li><img src="ikony/eu4.png"></li>
+                </ul>
+</div>    
+    
+    
+    <!---MENU--->
+    <section class='menu'>
+        <pas>
+            <a href="index.html"><img src="zdjecia/logo1.png"></a>
+            <div class="linki" id='linki'>
+        <i class="funkcja" onclick="ukryjMenu()" >X</i>
+                <ul>
+                    <li><a class="currentLink" href="index.html">STRONA GŁÓWNA</a></li>
+                    <li><a href="about.html">O&nbsp;PROJEKCIE</a></li>
+                    <li><a href="aboutus.html">O&nbsp;NAS</a></li>
+                    <li><a href="aktualnosci.html">AKTUALNOŚCI</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                    <li><a class="english" href="homeEN.html"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+                
+            </div>
+            <i class="funkcja" onclick="pokazMenu()">I||</i>
+        </pas>
+        
+        <div class='text-box'>
+            <h1>Uniwersalny, lekki szybowiec dla każdego</h1>
+            <p>Lataj bezpiecznie i kiedy chcesz!</p>
+        </div>
+    
+    </section>
+    
+<!---ZAWARTOŚĆ--->
+    
+    <div class='duzezdjecie' id="duzezdjeciebox">
+                    <img src="zdjecia/galeria/gal1.jpeg" id="duzezdjecie">
+        <br>
+    <span onclick="closeduzezdjecie()">X</span>
+    </div>
+    
+    <section class="zawartosc">
+        
+        <div class="rzad">
+            
+<!--- KOLUMNA 70% --->
+            <div class="kolumna7">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iLNTXlAQBcM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <div class="galeria">
+                    <img src="zdjecia/galeria/gal1.jpg" onclick="openduzezdjecie(this.src)">
+                    <img src="zdjecia/galeria/gal2.jpg" onclick="openduzezdjecie(this.src)">
+                    <img src="zdjecia/galeria/gal3.jpg" onclick="openduzezdjecie(this.src)">
+                    <img src="zdjecia/galeria/gal4.jpg" onclick="openduzezdjecie(this.src)">
+                    <img src="zdjecia/galeria/gal5.jpg" onclick="openduzezdjecie(this.src)">
+                </div>
+                
+
+                
+            </div>
+            
+<!------ KOLUMNA 30% -----> 
+            
+            <div class="kolumna3">
+    
+            <div class="sociale">
+                    <h4>Obserwuj nas</h4>
+                    <table>
+                        <tr>
+                        <th>
+                            <a href="http://www.facebook.com" target="_blank"><img src="ikony/fb.png" title="Wkrótce..."></a>
+                        </th>
+                        <th>
+                            <a href="http://www.youtube.com" target="_blank"><img src="ikony/yt.png" title="Wkrótce..." ></a>
+                        </th>
+                        </tr>
+                </table>    
+                
+            </div>
+                
+            <div class="foto">
+                <img src="zdjecia/logo1szare.png"    
+            </div> 
+            </div>
+            
+    </section>
+        
+            </div>
+            
+            <div class="popup hidden">
+            <h1>Informacja o plikach cookies</h1>
+                <p>W ramach tej Strony stosujemy pliki cookies. Korzystanie ze Strony bez zmiany ustawień dotyczących cookies oznacza zgodę na ich zapis lub wykorzystanie. Możecie Państwo dokonać zmiany ustawień dotyczących cookies w przeglądarce internetowej w każdym czasie. Więcej szczegółów w "Polityce Prywatności".</p>
+                <button>Nie pokazuj mi więcej tego komunikatu</button>
+            </div>
+      
+    <section class="stopka">
+        <div class="stopka-zawartosc">
+                <div class="rzad">
+                    <div class="stopka-kolumna frst">
+                        <h3>M&M Sailplanes sp. z o.o.</h3>
+                    </div>
+                    <div class="stopka-kolumna">
+                        <p>   <span>REGON</span>&nbsp;52082751800000<br>
+                        <span>KRS</span>&nbsp;0000943715<br>
+                        <span>NIP</span>&nbsp;5170422027</p>
+                </div>
+                    
+                    <div class="stopka-kolumna">
+                        <p><span>&#9993;</span>&nbsp;mmsailplanes@gmail.com<br>
+                        <span>&#9742;</span> +48 665 741 124</p>
+                        <p><span>&#9096;</span>&nbsp;Jasionka 954E,&nbsp;36-002</p>
+                    </div>
+                </div>
+            
+        </div>
+        
+        <div class="spod">
+                <p>Copyright &copy; 2022 <span>m&m Sailplanes</span>. <a href="zalaczniki/polityka_prywatnosci.pdf">Polityka&nbsp;Prywatności</a></p>
+            </div>
+        
+    </section>
+    
+<!------ JavaScript do menu i galerii --------->
+    <script>
+        
+        var linki = document.getElementById("linki");
+        
+        function pokazMenu(){
+            linki.style.right = "0";
+        }
+        
+        function ukryjMenu(){
+            linki.style.right = "-200px";
+        }
+        
+        var duzezdjeciebox = document.getElementById("duzezdjeciebox");
+        var duzezdjecie = document.getElementById("duzezdjecie");
+        
+        function openduzezdjecie(pic){
+            duzezdjeciebox.style.display = "flex";
+            duzezdjecie.src = pic;
+        }
+        
+        function closeduzezdjecie(){
+            duzezdjeciebox.style.display = "none";
+        }
+        
+    </script>
+    <script src="cookie.js"></script>
+    
+</body>
+</html>
