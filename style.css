@@ -23,7 +23,7 @@ img:hover{
 .menu{
     min-height: 30vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,212,255,1),rgba(0,212,255,0.1)), url(zdjecia/baner1.jpg);
+    background-image: linear-gradient(rgba(0,212,255,1),rgba(0,212,255,0.1)), url(zdjecia/baner1.JPG);
     background-position: center;
     background-size: cover;
     position: relative;
