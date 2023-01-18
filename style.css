@@ -1057,6 +1057,14 @@ h3{
     .spod{
         font-size: 10px;
     }
+    
+     .popup{
+        width: 80%;
+    }
+    
+    .popup p{
+        font-size: 14px;
+    }
 }
 
 
